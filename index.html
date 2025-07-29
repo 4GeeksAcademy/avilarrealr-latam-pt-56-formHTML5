@@ -31,23 +31,23 @@
         <!-- Input card# -->
         <form>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="cardNumber" class="form-label">Card #</label>
                     <input id="cardNumber" type="number" class="form-control" placeholder="XXXXXXXXXXXXXXXX" required>
                     <div class="invalid-feedback">
                         Valid card number is required.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="cvcNumber" class="form-label">CVC #</label>
                     <input id="cvcNumber" type="number" class="form-control" placeholder="XXX" required>
                     <div class="invalid-feedback">
                         Valid CVC number is required.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="amount" class="form-label">Amount</label>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center gap-1">
                         <span class="d-flex fw-bold">$</span>
                         <input id="amount" type="number" class="form-control" placeholder="Amount"
                             required>
@@ -59,14 +59,14 @@
             </div>
             <!-- Names -->
             <div class="row pt-2">
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <label for="firstName" class="form-label">First Name</label>
                     <input id="firstName" type="text" class="form-control" required>
                     <div class="invalid-feedback">
                         Valid name is required.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6">
                     <label for="lastName" class="form-label">Last Name</label>
                     <input id="lastName" type="text" class="form-control" required>
                     <div class="invalid-feedback">
@@ -76,7 +76,7 @@
             </div>
             <!-- City info -->
             <div class="row pt-2">
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="city" class="form-label">City</label>
                     <input id="city" type="text" class="form-control" required>
                     <div class="invalid-feedback">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <!-- Seleccionando estado -->
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="state" class="form-label">State</label>
                     <select class="form-control">
                         <option value="Pick a state">Pick a estate</option>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <!-- input Codigo postal -->
-                <div class="col">
+                <div class="col-12 col-sm-4">
                     <label for="code" class="form-label">Postal code</label>
                     <input id="code" type="number" class="form-control" required>
                     <div class="invalid-feedback">
@@ -106,9 +106,9 @@
             </div>
             <div class="row mt-3">
                 <!-- Metodos de pago -->
-                <div class="col">
+                <div class="col-12 col-md-5">
                     <label class="form-label">We accept:</label>
-                    <div class="d-flex bg-dark rounded w-100 g-2 justify-content-evenly">
+                    <div class="d-flex bg-dark rounded w-100 w-md-50 g-2 justify-content-evenly">
                         <!-- radio master -->
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <!-- Mensaje -->
-                <div class="col-8">
+                <div class="col-12 col-md-6">
                     <div>
                         <p>Message</p>
                         <textarea class="w-100 h-100"></textarea><br>
